@@ -612,7 +612,8 @@ The following command should show the API calls added in the update:
 git diff -w gen/nvml/nvml.h | grep "+nvmlReturn_t DECLDIR nvml"
 ```
 
-Note that these includes the new versions of existing calls -- which should already have been handled in the previous section. To exclude these run:
+Note that these includes the new versions of existing calls -- which should already have been handled in the previous section.
+To exclude these run:
 
 ```bash
 git diff -w gen/nvml/nvml.h | grep "+nvmlReturn_t DECLDIR nvml" | grep -vE "_v\d+\("
